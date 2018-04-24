@@ -5,11 +5,16 @@
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
      <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-            <version>4.12</version>
-        </dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <scope>test</scope>
+         <version>4.12</version>
+     </dependency>
+     <dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>fastjson</artifactId>
+	    <version>1.2.47</version>
+	</dependency>
   </dependencies>
   <build>
   	<plugins>
@@ -18,7 +23,6 @@
              <artifactId>maven-compiler-plugin</artifactId>
              <version>3.3</version>
              <configuration>
-                 <!-- 指定高版本的源码和编译后的字节码文件 -->
                  <source>1.8</source>
                  <target>1.8</target>
              </configuration>
