@@ -60,7 +60,6 @@ public class TestCombine {
                 continue;
             }
             int cursor = index+m-1;
-//            if(cursor>)
 
         }
         return null;
