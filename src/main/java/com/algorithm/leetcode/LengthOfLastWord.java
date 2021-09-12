@@ -4,19 +4,11 @@ public class LengthOfLastWord {
 
     public static int lengthOfLastWord(String s) {
         int count = 0;
-        boolean started = false;
         for (int i = s.length() - 1; i >= 0; i--) {
-            char c = s.charAt(i);
-            if(!started && c == ' '){
-                continue;
-            }
-            if(!started && c != ' '){
-                started = true;
-            }
-            if (c != ' ') {
+            if (s.charAt(i) != ' ') {
                 count++;
-            } else {
-                break;
+            } else if (count != 0) {
+                return count;
             }
         }
         return count;
