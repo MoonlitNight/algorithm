@@ -57,10 +57,10 @@ public class SymmetricTree {
             } else if (node1.val != node2.val) {
                 return false;
             }
-            queue.push(node1.left);
-            queue.push(node2.right);
-            queue.push(node1.right);
-            queue.push(node2.left);
+            queue.offer(node1.left);
+            queue.offer(node2.right);
+            queue.offer(node1.right);
+            queue.offer(node2.left);
         }
         return true;
     }
